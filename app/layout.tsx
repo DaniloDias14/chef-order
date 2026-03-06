@@ -29,7 +29,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="h-full">
       <body>
+        <AuthProvider>
                 {children}
+        </AuthProvider>
       </body>
     </html>
   );
