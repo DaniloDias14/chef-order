@@ -5,6 +5,8 @@ import "./globals.css";
 // Importações dos componentes
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Sidebar from "./components/Sidebar";
+import { AuthProvider } from "./context/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,9 +31,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="h-full">
       <body>
-        <AuthProvider>
-                {children}
-        </AuthProvider>
+        <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
   );
