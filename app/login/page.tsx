@@ -12,7 +12,7 @@ export default function LoginPage() {
     const senha = formData.get("senha");
 
     try {
-      const usuarioMock = new Usuario(1, "Danilo Dias");
+      const usuarioMock = new Usuario(1, "Danilo Dias", "00000000000", true);
       const tokenMock = "jwt-dba2y¨&*@sadgaj!shdga23@Sjhsd$";
 
       login(usuarioMock, tokenMock);
